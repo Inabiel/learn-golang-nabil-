@@ -14,3 +14,4 @@ let check = lang.map(e => {
 })
 
 console.log(newArr)
+
