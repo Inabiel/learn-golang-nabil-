@@ -17,10 +17,10 @@ func defer2() {
 
 func main() {
 	defer func() {
-		fmt.Println("3")
+		fmt.Println("3") //this runs last
 	}() //example of defer on IIFE
 	fmt.Println("Mulai")
-	defer defer2()
+	defer defer2() //this runs second
 	fmt.Println("Selesai")
-	defer defer1()
+	defer defer1() //this is first!
 }
